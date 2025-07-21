@@ -1,0 +1,24 @@
+{
+  "common": {
+    "Driver": "{SQL Server}",
+    "Server": "Servidor",
+    "Trusted_Connection": "No",
+    "LDAP_SERVER": "ldap://pesca.int.es",
+    "LDAP_DOMAIN": "pesca\\",
+    "UID": "UsuarioSQL",
+    "PWD": "Contraseña",
+    "SIPE_USER": "UsuarioSQL"
+    
+  },
+  "SGP_SIPE_EXPLOTACION": {
+    "Database": "SGP_SIPE_EXPLOTACION"
+
+  },
+  "SGP_SIPE": {
+    "Database": "SGP_SIPE"
+  
+  },
+  "SGP_CUADROSMANDO": {
+    "Database": "SGP_CUADROSMANDO"
+  }
+}
