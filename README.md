@@ -6,20 +6,19 @@ Este proyecto tiene como objetivo automatizar la carga de datos tabulares (Excel
 
 ```
 Python con SQL server/  
-├── config/ # Configuraciones (conexiones, parámetros)  
-│ └── config.py  
-├── data/ # Archivos fuente: Excel y Shapefiles  
+├── config/    # Configuraciones (conexiones, parámetros)  
+├── data/      # Archivos fuente: Excel y Shapefiles  
 ├── notebooks/ # Notebooks de ejecución y pruebas  
-├── utils/ # Funciones de carga, conexión, consultas SQL  
+├── utils/     # Funciones de carga, conexión, consultas SQL  
 └── README.md
 ```
 
 ## 🚀 Funcionalidades Principales
 
-- 📥 Importación de archivos Excel a SQL Server.
-- 🌍 Carga de archivos Shapefile a SQL Server (con geometría).
-- 🔎 Ejecución de consultas SQL y visualización con Pandas.
-- 🔧 Modularizado para facilitar el mantenimiento y la reutilización.
+- Importación de archivos Excel a SQL Server.
+- Carga de archivos Shapefile a SQL Server (con geometría).
+- Ejecución de consultas SQL y visualización con Pandas.
+- Modularizado para facilitar el mantenimiento y la reutilización.
 
 ## 🧰 Tecnologías Usadas
 
