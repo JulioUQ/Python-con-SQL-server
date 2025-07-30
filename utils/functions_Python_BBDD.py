@@ -71,7 +71,6 @@ def ejecutar_consulta_sql(
     return df
 
 
-
 def importar_shapefile_a_sqlserver(
         ruta_shapefile: str, 
         nombre_tabla: str, 
@@ -79,6 +78,11 @@ def importar_shapefile_a_sqlserver(
         ruta_config: str = config_path_exp):
     """Importa un shapefile o GeoJSON a una tabla de SQL Server con geometría."""
     gdf = gpd.read_file(ruta_shapefile)
+
+    # 🔹 Ajustar CRS a EPSG:4326 si no está ya en ese sistema
+    if gdf.crs != "EPSG:4326":
+        gdf = gdf.to_crs(epsg=4326)
+
     gdf["geometry_WKT"] = gdf.geometry.apply(lambda geom: geom.wkt if geom else None)
     df = gdf.drop(columns='geometry')
 
@@ -120,6 +124,7 @@ def importar_shapefile_a_sqlserver(
     cursor.close()
     conn.close()
     print(f"Shapefile cargado correctamente en la tabla [{schema}].[{nombre_tabla}].")
+
 
 def importar_dataframe_a_sqlserver(
     df: pd.DataFrame,
