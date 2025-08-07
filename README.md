@@ -55,7 +55,7 @@ importar_dataframe_a_sqlserver(df, nombre_tabla="tabla_destino")
 df_resultado = ejecutar_consulta_sql("SELECT * FROM tabla_destino")
 ```
 
-## 📌 Notas
+## Notas
 
 - Las rutas se manejan con `os.path` para asegurar compatibilidad cross-platform.
 - Los notebooks ubicados en `notebooks/` muestran ejemplos prácticos y trazas de ejecución.
