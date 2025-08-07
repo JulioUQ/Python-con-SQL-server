@@ -1,8 +1,8 @@
-# 📦 Python con SQL server
+# Python con SQL server
 
 Este proyecto tiene como objetivo automatizar la carga de datos tabulares (Excel) y geográficos (Shapefiles) en una base de datos SQL Server, además de permitir la ejecución de consultas SQL para análisis y validación.
 
-## 🗂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Python con SQL server/  
@@ -13,14 +13,14 @@ Python con SQL server/
 └── README.md
 ```
 
-## 🚀 Funcionalidades Principales
+## Funcionalidades Principales
 
 - Importación de archivos Excel a SQL Server.
 - Carga de archivos Shapefile a SQL Server (con geometría).
 - Ejecución de consultas SQL y visualización con Pandas.
 - Modularizado para facilitar el mantenimiento y la reutilización.
 
-## 🧰 Tecnologías Usadas
+## Tecnologías Usadas
 
 - Python 3.8+
 - Pandas, Geopandas
@@ -28,7 +28,7 @@ Python con SQL server/
 - OS, SYS, dotenv
 - Jupyter Notebooks
 
-## ⚙️ Configuración
+##  Configuración
 
 Configura tu conexión a SQL Server en `config/config.py` o usando variables de entorno (`.env`):
     
@@ -42,7 +42,7 @@ Configura tu conexión a SQL Server en `config/config.py` o usando variables d
     }
     ```
     
-## 🧪 Ejemplo de Uso
+## Ejemplo de Uso
 
 ```python
 # Leer Excel
